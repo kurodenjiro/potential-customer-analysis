@@ -1,0 +1,109 @@
+<!-- HTML document of the Potentials interface -->
+<!-- orig. 18.12.2014 larsverspohl -->
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+<script src="libs/d3.v3.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="circle_pack.css">
+
+<title>potential analysis</title>
+
+</head>
+<body>
+
+<div class="assistant"></div> <!-- assistant -->
+
+<section id="controlTop">
+	<div id="wrapperFilters" class="outside">
+		<nav class="nav header"> 
+			<div class="nav brand"><img src="images/circle.png" alt="round" height="25px" width="25px"></div> <!-- to be played around with attention, needs to be done -->
+			<ul class="nav list">
+				<li class="data" id="data0">raw information</li>
+
+				<li class="dataWrap">
+					<span id="germany">germany model</span> <!-- in span in order to be able to change name -->
+					<ul class="drop">
+						<li class="data" id="data0">germany - raw</li>
+						<li class="data" id="data1">germany - split</li>
+						<li class="data" id="data2">germany - overall</li>
+					</ul>
+				</li>
+
+				<li class="dataWrap">
+					<span id="uk">uk model</span> <!-- in span in order to be able to change name -->
+					<ul class="drop">
+						<li class="data" id="data3">uk - raw</li>
+						<li class="data" id="data4">uk - split</li>
+						<li class="data" id="data5">uk - overall</li>
+					</ul>
+				</li>
+
+				<li class="dataWrap">
+					<span id="us">us model</span> <!-- in span in order to be able to change name -->
+					<ul class="drop">
+						<li class="data" id="data6">us - raw</li>
+						<li class="data" id="data7">us - split</li>
+						<li class="data" id="data8">us - overall</li>
+					</ul>
+				</li>
+
+
+				<!-- <li class="test" >droppeldidrop
+					<ul class="drop">
+						<li class="play" id="drop0">drop0</li>
+						<li class="play" id="drop1">drop1</li>
+						<li class="play" id="drop2">drop2</li>
+					</ul>
+				</li> -->
+
+
+				<li class="explain">what's this?</li>
+
+			</ul>
+		</nav>
+	</div>
+</section> <!-- nav -->
+
+<section id="container">
+
+	<div class="svgRightWrapper"></div>
+
+	<!-- <div class="button" id="reloadPage" onClick="window.location.reload()">reload page</div> -->
+	<div class="button" id="removeBars">remove bars</div>
+
+	<div class="narrative">
+		<div></div>
+	</div>
+	
+	<!-- <i class="fa fa-arrow-down"></i> -->
+	
+	<div class="plotpoints">
+		<svg class="plotpoints"></svg>
+	</div>
+	
+	<div class="button" id="removeNarrative">explore</div>
+
+	<!-- <div id="categoryLabel"></div> -->
+
+</section> <!-- container -->
+
+<div id="modal">
+	<div></div>
+</div>
+
+
+
+<section id="footer">
+	<a href="mailto:lars.verspohl@hotmail.com?Subject=predictive%20characteristics" target="_top">larsverspohl@hotmail.com</a>
+</section>
+
+
+<script src="circle_pack.js"></script>
+
+
+</body>
+</html>

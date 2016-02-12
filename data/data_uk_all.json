@@ -1,0 +1,15 @@
+{
+	"name": "All Brand Tracking - United Kingdom",
+	"children": [
+		{"category": "TV and video operators", "name": "Considers Linear Operator 4", "total model": 1, "size": 7.29, "potential": 0.634206066620273, "nonPotential": 0.310429669602816, "diff": 0.323776397017457, "key": 1620},
+		{"category": "TV and video operators", "name": "Recommends Linear Operator 14", "total model": 0, "size": 3.53, "potential": 0.992779840858762, "nonPotential": 0.747460651961304, "diff": 0.245319188897458, "key": 1902},
+		{"category": "TV and video operators", "name": "Considers Online Operator 5 ", "total model": 1, "size": 2.22, "potential": 0.147176626258054, "nonPotential": 0.032622221622982, "diff": 0.114554404635072, "key": 1629},
+		{"category": "TV and video operators", "name": "Considers Online Operator 6 ", "total model": 0, "size": 1.92, "potential": 0.377795945730675, "nonPotential": 0.176166231336987, "diff": 0.201629714393688, "key": 1631},
+		{"category": "Content", "name": "Linear Operator 14 has best Sports", "total model": 0, "size": 1.45, "potential": 0.111146270516712, "nonPotential": 0.0529822902494194, "diff": 0.0581639802672926, "key": 1331},
+		{"category": "TV and video operators", "name": "Rejects Linear Operator 14", "total model": 1, "size": 0.57, "potential": 0.0320098970729791, "nonPotential": 0.105872684006008, "diff": -0.0738627869330289, "key": 1950},
+		{"category": "TV and video channels", "name": "Knows Online Operator 5 as Film brand", "total model": 1, "size": 0.15, "potential": 0.417384786270683, "nonPotential": 0.324662567502319, "diff": 0.092722218768364, "key": 584},
+		{"category": "Advertising reach", "name": "Has seen Online Operator 9 ads online", "total model": 0, "size": 0.12, "potential": 0.0710210743697196, "nonPotential": 0.0354250197263343, "diff": 0.0355960546433853, "key": 248},
+		{"category": "Content", "name": "Likes Sport", "total model": 0, "size": 0.08, "potential": 0.362766406880484, "nonPotential": 0.332588038014928, "diff": 0.030178368865556, "key": 1343},
+		{"category": "TV and video operators", "name": "Linear Operator 14 is most innovative", "total model": 0, "size": 0.03, "potential": 0.0655677779637998, "nonPotential": 0.0129031121656431, "diff": 0.0526646657981567, "key": 1728}
+	]
+}

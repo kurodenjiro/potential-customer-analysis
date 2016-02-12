@@ -1,0 +1,104 @@
+{
+	"name": "All Brand Tracking - United States",
+	"children": [
+		{"name": "Advertising reach information", "key": 2561,
+			"children": [
+				{"category": "Advertising reach", "name": "Has seen Satellite ads on TV", "total model": 0, "size": 33.97, "potential": 0.222784066722158, "nonPotential": 0.0972456828725617, "diff": 0.125538383849596, "key": 92},
+				{"category": "Advertising reach", "name": "Has seen linear pay TV ads on TV", "total model": 0, "size": 6.26, "potential": 0.55250696593196, "nonPotential": 0.398547915592457, "diff": 0.153959050339503, "key": 218},
+				{"category": "Advertising reach", "name": "Has seen Online Operator 6 ads on TV", "total model": 0, "size": 6.24, "potential": 0.106053668554941, "nonPotential": 0.110751402806961, "diff": -0.00469773425202, "key": 168},
+				{"category": "Advertising reach", "name": "Has seen Channel 25 ads on TV", "total model": 1, "size": 6.23, "potential": 0.0583218760842677, "nonPotential": 0.0198003208190885, "diff": 0.0385215552651792, "key": 462},
+				{"category": "Advertising reach", "name": "Has seen linear pay TV ads on TV", "total model": 0, "size": 6.18, "potential": 0.558345980309421, "nonPotential": 0.410382064091011, "diff": 0.14796391621841, "key": 219},
+				{"category": "Advertising reach", "name": "Has seen Online Operator 9 ads on TV", "total model": 0, "size": 5.56, "potential": 0.351849969688334, "nonPotential": 0.236898361584727, "diff": 0.114951608103607, "key": 247},
+				{"category": "Advertising reach", "name": "Has seen IPTV ads on TV", "total model": 0, "size": 5.26, "potential": 0.131464914533574, "nonPotential": 0.0806237023374573, "diff": 0.0508412121961167, "key": 186},
+				{"category": "Advertising reach", "name": "Has seen Terrestrial ads on TV", "total model": 0, "size": 5.26, "potential": 0.266564594666858, "nonPotential": 0.227408630715435, "diff": 0.039155963951423, "key": 111},
+				{"category": "Advertising reach", "name": "Has seen Linear Operator 5 ads on TV", "total model": 0, "size": 4.48, "potential": 0.293825521257975, "nonPotential": 0.233244227569213, "diff": 0.060581293688762, "key": 60},
+				{"category": "Advertising reach", "name": "Has seen Terrestrial ads on TV", "total model": 0, "size": 3.47, "potential": 0.266564594666858, "nonPotential": 0.232840266701154, "diff": 0.033724327965704, "key": 112},
+				{"category": "Advertising reach", "name": "Has seen Online Operator 9 ads online", "total model": 0, "size": 2.08, "potential": 0.124110705777496, "nonPotential": 0.0820564875799018, "diff": 0.0420542181975942, "key": 238},
+				{"category": "Advertising reach", "name": "Has seen Online Operator 6 ads online", "total model": 0, "size": 2.01, "potential": 0.0475817262692276, "nonPotential": 0.0286549623332271, "diff": 0.0189267639360005, "key": 159},
+				{"category": "Advertising reach", "name": "Has seen linear pay TV ads in print", "total model": 0, "size": 1.97, "potential": 0.0615530063421892, "nonPotential": 0.0495485289697215, "diff": 0.0120044773724677, "key": 215},
+				{"category": "Advertising reach", "name": "Has seen IPTV ads on TV", "total model": 0, "size": 1.76, "potential": 0.147562923285072, "nonPotential": 0.0861013996229401, "diff": 0.0614615236621319, "key": 187},
+				{"category": "Advertising reach", "name": "Has seen Cable ads on TV", "total model": 0, "size": 1.28, "potential": 0.314107982835521, "nonPotential": 0.241373948055425, "diff": 0.072734034780096, "key": 18}
+			]
+		},
+		{"name": "Information on TV and video channel brands", "key": 2562,
+			"children": [
+				{"category": "TV and video channels", "name": "Considers Linear Operator 14  as Film service", "total model": 0, "size": 17.68, "potential": 0.264324444727567, "nonPotential": 0.089905480517734, "diff": 0.174418964209833, "key": 687},
+				{"category": "TV and video channels", "name": "Considers Channel 33 as Sports service", "total model": 0, "size": 12.27, "potential": 0.243456187532966, "nonPotential": 0.0906419659789599, "diff": 0.152814221554006, "key": 723},
+				{"category": "TV and video channels", "name": "Knows Channel 25 as Sports brand", "total model": 0, "size": 11.11, "potential": 0.286665605859198, "nonPotential": 0.136379087342175, "diff": 0.150286518517023, "key": 636},
+				{"category": "TV and video channels", "name": "Knows Online Operator 5 as Film brand", "total model": 1, "size": 5.8, "potential": 0.595298743875588, "nonPotential": 0.384244149867492, "diff": 0.211054594008096, "key": 584},
+				{"category": "TV and video channels", "name": "Unaided aware of Online Operator 5 as Film brand", "total model": 1, "size": 5.47, "potential": 0.094945439327416, "nonPotential": 0.030610581949994, "diff": 0.064334857377422, "key": 974},
+				{"category": "TV and video channels", "name": "Knows Channel 9 as Sport brand Top of Mind", "total model": 0, "size": 4.77, "potential": 0.227382549286734, "nonPotential": 0.157738596092008, "diff": 0.069643953194726, "key": 897},
+				{"category": "TV and video channels", "name": "Considers Channel 8 as Sports service", "total model": 1, "size": 4.56, "potential": 0.0851734814120441, "nonPotential": 0.0128769439311117, "diff": 0.0722965374809324, "key": 700},
+				{"category": "TV and video channels", "name": "Considers Channel 10  as Film service", "total model": 1, "size": 2.91, "potential": 0.106262659911783, "nonPotential": 0.0362937247400639, "diff": 0.0699689351717191, "key": 666},
+				{"category": "TV and video channels", "name": "Considers Channel 5 as Sports service", "total model": 0, "size": 2.72, "potential": 0.145616423082062, "nonPotential": 0.0537623648853987, "diff": 0.0918540581966633, "key": 698},
+				{"category": "TV and video channels", "name": "Knows Channel 29 as Film brand", "total model": 0, "size": 2.64, "potential": 0.600666626484428, "nonPotential": 0.377431903672425, "diff": 0.223234722812003, "key": 606},
+				{"category": "TV and video channels", "name": "Considers Online Operator 5  as Film service", "total model": 0, "size": 1.82, "potential": 0.235164518517626, "nonPotential": 0.0999358599067398, "diff": 0.135228658610886, "key": 665},
+				{"category": "TV and video channels", "name": "Unaided aware of Online Operator 20 as Film brand", "total model": 0, "size": 1.82, "potential": 0.131488683548425, "nonPotential": 0.0665206348126062, "diff": 0.0649680487358188, "key": 1030},
+				{"category": "TV and video channels", "name": "Considers Channel 28 as Doc brand", "total model": 0, "size": 1.66, "potential": 0.124513501078838, "nonPotential": 0.0612462315080784, "diff": 0.0632672695707596, "key": 655},
+				{"category": "TV and video channels", "name": "Unaided aware of Online Operator 5 as Film brand", "total model": 0, "size": 1.55, "potential": 0.161411666074424, "nonPotential": 0.059313795838158, "diff": 0.102097870236266, "key": 1007},
+				{"category": "TV and video channels", "name": "Knows Channel 8 as Sports brand", "total model": 0, "size": 1.47, "potential": 0.231141693505526, "nonPotential": 0.115195531915398, "diff": 0.115946161590128, "key": 619}
+			]
+		},
+		{"name": "Information on TV and video operator brands", "key": 2565,
+			"children": [
+				{"category": "TV and video operators", "name": "Considers Linear Operator 4", "total model": 1, "size": 63.38, "potential": 0.485554796382694, "nonPotential": 0.0692602354537032, "diff": 0.416294560928991, "key": 1620},
+				{"category": "TV and video operators", "name": "Considers Linear Operator 3", "total model": 1, "size": 11.26, "potential": 0.213508280692757, "nonPotential": 0.0307417135292083, "diff": 0.182766567163549, "key": 1619},
+				{"category": "TV and video operators", "name": "Considers Channel 5", "total model": 1, "size": 7.35, "potential": 0.160066960553265, "nonPotential": 0.030994833109128, "diff": 0.129072127444137, "key": 1625},
+				{"category": "TV and video operators", "name": "Has seen Linear Operator 14 ads on TV", "total model": 0, "size": 4.08, "potential": 0.222784066722158, "nonPotential": 0.0972456828725617, "diff": 0.125538383849596, "key": 1559},
+				{"category": "TV and video operators", "name": "Considers Online Operator 5 ", "total model": 1, "size": 2.58, "potential": 0.238366728597695, "nonPotential": 0.0529349141999943, "diff": 0.185431814397701, "key": 1629},
+				{"category": "TV and video operators", "name": "Linear Operator 14 is most innovative", "total model": 1, "size": 2.22, "potential": 0.126900648790388, "nonPotential": 0.0313358257476798, "diff": 0.0955648230427082, "key": 1728},
+				{"category": "TV and video operators", "name": "Unaided aware of Linear Operator 14 ", "total model": 0, "size": 1.49, "potential": 0.658297626328376, "nonPotential": 0.447459488479506, "diff": 0.21083813784887, "key": 2334},
+				{"category": "TV and video operators", "name": "Knows Linear Operator 3", "total model": 0, "size": 1.32, "potential": 0.579761549471279, "nonPotential": 0.390365202289259, "diff": 0.18939634718202, "key": 1571},
+				{"category": "TV and video operators", "name": "Considers Online Operator 9 ", "total model": 0, "size": 0.95, "potential": 0.632894402304004, "nonPotential": 0.406659420513803, "diff": 0.226234981790201, "key": 1635},
+				{"category": "TV and video operators", "name": "Rejects Linear Operator 14", "total model": 1, "size": 0.92, "potential": 0.0408980603674427, "nonPotential": 0.146835957517577, "diff": -0.105937897150134, "key": 1950},
+				{"category": "TV and video operators", "name": "Linear Operator 14 has best value for money", "total model": 0, "size": 0.84, "potential": 0.0696472707671076, "nonPotential": 0.0188989200538344, "diff": 0.0507483507132732, "key": 2406}
+			]
+		},
+		{"name": "Content information", "key": 2563,
+			"children": [
+				{"category": "Content", "name": "Linear Operator 14 has best Sports", "total model": 1, "size": 37.08, "potential": 0.157656710680474, "nonPotential": 0.0411028966996367, "diff": 0.116553813980837, "key": 1331},
+				{"category": "Content", "name": "Likes Sport", "total model": 1, "size": 23.02, "potential": 0.468201617199983, "nonPotential": 0.290625351459145, "diff": 0.177576265740838, "key": 1343},
+				{"category": "Content", "name": "Online Operator 5 has best Films", "total model": 0, "size": 16.94, "potential": 0.114056886974401, "nonPotential": 0.0399242947237597, "diff": 0.0741325922506413, "key": 1160},
+				{"category": "Content", "name": "Prefers to watch TV-series on linear TV", "total model": 0, "size": 4.94, "potential": 0.205662734517431, "nonPotential": 0.33440541545012, "diff": -0.128742680932689, "key": 1361},
+				{"category": "Content", "name": "Channel 5 has best Sports", "total model": 0, "size": 4.63, "potential": 0.128001067209916, "nonPotential": 0.0549723682595365, "diff": 0.0730286989503795, "key": 1300},
+				{"category": "Content", "name": "Prefers to watch TV-Series online and on linear TV", "total model": 0, "size": 4.56, "potential": 0.649851627807901, "nonPotential": 0.485872089925596, "diff": 0.163979537882305, "key": 1362},
+				{"category": "Content", "name": "Likes Films", "total model": 0, "size": 3.77, "potential": 0.86493263626735, "nonPotential": 0.746937451151067, "diff": 0.117995185116283, "key": 1339},
+				{"category": "Content", "name": "Online Operator 19 has best Sports", "total model": 0, "size": 0.77, "potential": 0.099654605513432, "nonPotential": 0.0591173254668713, "diff": 0.0405372800465607, "key": 1330},
+				{"category": "Content", "name": "Linear Operator 2 has best Sports", "total model": 0, "size": 0.69, "potential": 0.0215948127769552, "nonPotential": 0.0555562954380206, "diff": -0.0339614826610654, "key": 1293},
+				{"category": "Content", "name": "Likes Series", "total model": 0, "size": 0.67, "potential": 0.662866295365258, "nonPotential": 0.564900724946901, "diff": 0.097965570418357, "key": 1342},
+				{"category": "Content", "name": "Prefers to watch Docs online and on linear TV", "total model": 0, "size": 0.5, "potential": 0.599054958397505, "nonPotential": 0.476180725334224, "diff": 0.122874233063281, "key": 1346}
+			]
+		},
+		{"name": "Demographic information", "key": 2564,
+			"children": [
+				{"category": "Demographics", "name": "Income", "total model": 0, "size": 58.73, "potential": 5.94716244572172, "nonPotential": 5.50981921862818, "diff": 0.43734322709354, "key": 1370},
+				{"category": "Demographics", "name": "Gender", "total model": 0, "size": 17.21, "potential": 1.39046603062413, "nonPotential": 1.49599257002948, "diff": -0.10552653940535, "key": 1369},
+				{"category": "Demographics", "name": "Has Kids", "total model": 0, "size": 6.07, "potential": 0.648459063893362, "nonPotential": 0.558121460582303, "diff": 0.090337603311059, "key": 1371},
+				{"category": "Demographics", "name": "Age", "total model": 0, "size": 4.42, "potential": 47.3788526071227, "nonPotential": 47.9266328245381, "diff": -0.547780217415401, "key": 1368},
+				{"category": "Demographics", "name": "Has Cable", "total model": 0, "size": 4.05, "potential": 0.135989461035874, "nonPotential": 0.106590881446294, "diff": 0.02939857958958, "key": 1373},
+				{"category": "Demographics", "name": "Watches TV online", "total model": 0, "size": 1.07, "potential": 0.0900147660617624, "nonPotential": 0.0563494538917151, "diff": 0.0336653121700473, "key": 1377},
+				{"category": "Demographics", "name": "Has Terrestrial", "total model": 0, "size": 1.04, "potential": 0.788689472704029, "nonPotential": 0.761513800884478, "diff": 0.0271756718195511, "key": 1375},
+				{"category": "Demographics", "name": "Lives on a farm", "total model": 0, "size": 0.57, "potential": 0.0657655003910534, "nonPotential": 0.0559549907734463, "diff": 0.0098105096176071, "key": 1383}
+			]
+		},
+		{"name": "Subscription information", "key": 2566,
+			"children": [
+				{"category": "Subscription", "name": "Used to be Online Operator 5 sub", "total model": 0, "size": 33.86, "potential": 0.235164518517626, "nonPotential": 0.0999358599067398, "diff": 0.135228658610886, "key": 2495},
+				{"category": "Subscription", "name": "Subscribes to Cable", "total model": 0, "size": 17.46, "potential": 0.114350728414183, "nonPotential": 0.0514427825607268, "diff": 0.0629079458534562, "key": 2446},
+				{"category": "Subscription", "name": "Used to be Channel 3 sub", "total model": 0, "size": 9.87, "potential": 0.180364268945369, "nonPotential": 0.0905928047714908, "diff": 0.0897714641738782, "key": 2488},
+				{"category": "Subscription", "name": "Used to be Online Operator 6 sub", "total model": 0, "size": 7.58, "potential": 0.263413247811162, "nonPotential": 0.158819366887277, "diff": 0.104593880923885, "key": 2497},
+				{"category": "Subscription", "name": "Used to be Online Operator 19 sub", "total model": 0, "size": 5.29, "potential": 0.269060786477005, "nonPotential": 0.15569909836245, "diff": 0.113361688114555, "key": 2521},
+				{"category": "Subscription", "name": "Cancelled an SVOD subscription more than 6 months ago", "total model": 0, "size": 4.26, "potential": 0.191211484128184, "nonPotential": 0.119458231768952, "diff": 0.071753252359232, "key": 2460},
+				{"category": "Subscription", "name": "Used to be Online Operator 15 sub", "total model": 0, "size": 4.17, "potential": 0.0874556796336208, "nonPotential": 0.0475060263751372, "diff": 0.0399496532584836, "key": 2515},
+				{"category": "Subscription", "name": "Used to be Online Operator 9 sub", "total model": 0, "size": 3.86, "potential": 0.498165431493997, "nonPotential": 0.423250996490291, "diff": 0.074914435003706, "key": 2501},
+				{"category": "Subscription", "name": "Subscribes to Online Operator 15", "total model": 0, "size": 2.96, "potential": 0.0456079928178875, "nonPotential": 0.0204306838239409, "diff": 0.0251773089939466, "key": 2545},
+				{"category": "Subscription", "name": "No plans to change linear TV subscription ", "total model": 0, "size": 1.75, "potential": 0.640111101530531, "nonPotential": 0.701654765525788, "diff": -0.061543663995257, "key": 2465},
+				{"category": "Subscription", "name": "Started an SVOD subscription within the last 6 months", "total model": 0, "size": 1.5, "potential": 0.103642333491409, "nonPotential": 0.0755655308492421, "diff": 0.0280768026421669, "key": 2536},
+				{"category": "Subscription", "name": "Used to be Online Operator 20 sub", "total model": 0, "size": 1.32, "potential": 0.0876456209298371, "nonPotential": 0.0457346931479797, "diff": 0.0419109277818574, "key": 2523},
+				{"category": "Subscription", "name": "Started a linear subscription more than 6 months ago", "total model": 0, "size": 1.22, "potential": 0.91728265503535, "nonPotential": 0.871415153915834, "diff": 0.045867501119516, "key": 2535},
+				{"category": "Subscription", "name": "Subscribes to Online Operator 9", "total model": 0, "size": 1.11, "potential": 0.213025289058039, "nonPotential": 0.136340648442922, "diff": 0.076684640615117, "key": 2478},
+				{"category": "Subscription", "name": "Cancelled an SVOD subscription within the last 6 months", "total model": 0, "size": 0.9, "potential": 0.0786470190935739, "nonPotential": 0.0592000155191971, "diff": 0.0194470035743768, "key": 2459}
+			]
+		}
+	]
+}

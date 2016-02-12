@@ -1,0 +1,20 @@
+{
+	"name": "All Brand Tracking - United States",
+	"children": [
+		{"category": "TV and video operators", "name": "Considers Linear Operator 4", "total model": 1, "size": 46, "potential": 0.485554796382694, "nonPotential": 0.0692602354537032, "diff": 0.416294560928991, "key": 1620},
+		{"category": "Content", "name": "Linear Operator 14 has best Sports", "total model": 0, "size": 12.41, "potential": 0.157656710680474, "nonPotential": 0.0411028966996367, "diff": 0.116553813980837, "key": 1331},
+		{"category": "TV and video operators", "name": "Considers Linear Operator 3", "total model": 1, "size": 9.06, "potential": 0.213508280692757, "nonPotential": 0.0307417135292083, "diff": 0.182766567163549, "key": 1619},
+		{"category": "TV and video operators", "name": "Considers Channel 5", "total model": 1, "size": 4.4, "potential": 0.160066960553265, "nonPotential": 0.030994833109128, "diff": 0.129072127444137, "key": 1625},
+		{"category": "TV and video operators", "name": "Considers Online Operator 5 ", "total model": 1, "size": 2.22, "potential": 0.238366728597695, "nonPotential": 0.0529349141999943, "diff": 0.185431814397701, "key": 1629},
+		{"category": "Content", "name": "Likes Sport", "total model": 0, "size": 2.05, "potential": 0.468201617199983, "nonPotential": 0.290625351459145, "diff": 0.177576265740838, "key": 1343},
+		{"category": "TV and video channels", "name": "Knows Online Operator 5 as Film brand", "total model": 1, "size": 1.64, "potential": 0.595298743875588, "nonPotential": 0.384244149867492, "diff": 0.211054594008096, "key": 584},
+		{"category": "TV and video operators", "name": "Linear Operator 14 is most innovative", "total model": 0, "size": 0.96, "potential": 0.126900648790388, "nonPotential": 0.0313358257476798, "diff": 0.0955648230427082, "key": 1728},
+		{"category": "TV and video channels", "name": "Unaided aware of Online Operator 5 as Film brand", "total model": 0, "size": 0.89, "potential": 0.094945439327416, "nonPotential": 0.030610581949994, "diff": 0.064334857377422, "key": 974},
+		{"category": "TV and video channels", "name": "Considers Channel 8 as Sports service", "total model": 0, "size": 0.38, "potential": 0.0851734814120441, "nonPotential": 0.0128769439311117, "diff": 0.0722965374809324, "key": 700},
+		{"category": "TV and video channels", "name": "Considers Channel 10  as Film service", "total model": 0, "size": 0.19, "potential": 0.106262659911783, "nonPotential": 0.0362937247400639, "diff": 0.0699689351717191, "key": 666},
+		{"category": "Advertising reach", "name": "Has seen Channel 25 ads on TV", "total model": 0, "size": 0.12, "potential": 0.0583218760842677, "nonPotential": 0.0198003208190885, "diff": 0.0385215552651792, "key": 462},
+		{"category": "TV and video operators", "name": "Considers Online Operator 6 ", "total model": 0, "size": 0.11, "potential": 0.320347765383348, "nonPotential": 0.14484602628051, "diff": 0.175501739102838, "key": 1631},
+		{"category": "TV and video operators", "name": "Rejects Linear Operator 14", "total model": 1, "size": 0.09, "potential": 0.0408980603674427, "nonPotential": 0.146835957517577, "diff": -0.105937897150134, "key": 1950},
+		{"category": "Subscription", "name": "Subscribes to Linear Operator 4", "total model": 0, "size": 0, "potential": 0.0102275826742152, "nonPotential": 0.0136717525545339, "diff": -0.0034441698803187, "key": 2447}
+	]
+}

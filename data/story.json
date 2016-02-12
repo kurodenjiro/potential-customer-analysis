@@ -1,0 +1,152 @@
+{ "name": "story",
+	"introduction": 		{ "id": 0,
+			"title": "<h1>Learning about our potential customers</h1>",
+			"text": "<p>Imagine a survey that runs for one year asking 2,000 respondents per month about when and how they watch TV, which genres and channels they like, which operators they subscribe to, how this has changed and how this will change going forward. Imagine we've asked around 70 questions per interview and unrolled (or 'dummified') the answers to all available information.</p>  <p>We could get roughly 25,000 interviews with just short of 3,000 variables.</p> <p>Now imagine we ran a TV operator like, say, Sky. We wanted to know how potential customers look like and (important) how they differ from non-potential customers. Who are they? How are they watching TV? What are they watching?</p> <p>This analysis asked that question - not for Sky, but for another European TV operator. The data is neutralised but this tour we're about to take explains the steps and the sense behind the analysis.</p>  <p>Each interview, or rather each respondent who was kind enough to complete an interview, gets labelled as either a potential customer or a non-potential customer.</p> <p>A potential customer considers subscribing to our brand - a non-potential customer does not consider to subscribe. Customers are excluded.<p> <p>Our task is to find all variables that describe the difference between a potential and a non-potential well. Maybe this can help us characterise our potential customers well - inform our Strategy, our Marketing, acquisitions, sales, our President and CEO as well as our new trainee.</p> <p>In order to find an answer (or better questions...) we run some statistical learning algorithms that can find signal in a lot of noise based on the question we asked it. Why are we doing this ? Because we need help lookig at a dataset with 3,000 columns and over 25,000 rows.</p> <p>The models applied <span id=\"modalSmall\"><sup>[<a href=\"http://statweb.stanford.edu/~tibs/lasso.html\" target=\"_blank\">GLM with Lasso</a>, <a href=\"http://en.wikipedia.org/wiki/Gradient_boosting\"target=\"_blank\">GBM</a> in case you're keen]</sup></span> can reduce large amounts of indistinguishable information to a few important factors ranked by importance. An important factor would be a characteristic that has a strong relationship with being a Potential as opposed to being a Non-Potential.</p><p><a href='#' class='modalBtn' id='tapper'>start</a> &nbsp; &nbsp; &nbsp; <a href='#' class='modalBtn' id='close'>close</a></p>",
+			"animation": "blur",
+			"delay": 0
+		},
+	"plotpoints": [
+		{
+			"id": 0,
+			"title": "<h1>The unrefined data - removing cases</h1>",
+			"text": "<p>At the beginning of time, we have a relatvely large (some might rightly say really small) dataset of around 3,000 variables for 25,000 respondents.</p><p>Each dot to the right represents about 10 people that kindly filled in a questionnaire.</p><p>Pursuing our mission to cut through to the important information it's easy to get rid of some of these 25,000 cases.</p><p>First, we only look at the last 6 months and remove all respondents from the first 6 months (we can run historic models later)...</p>",
+			"animation": "allCases",
+			"animationReverse": "none",
+			"delay": 6000
+		},
+		{
+			"id": 1,
+			"title": "<h1>The unrefined data - removing cases</h1>",
+			"text": "<p> next we can get rid of all people subscribing to our brand...</p>",
+			"animation": "reduceCases",
+			"animationReverse": "none",
+			"arguments": 1,
+			"delay": 7000
+		},
+		{
+			"id": 2,
+			"title": "<h1>The unrefined data - removing cases</h1>",
+			"text": "<p>We're now down to a mere 10,000 respondents.</p>",
+			"animation": "reduceCases",
+			"animationReverse": "allCases",
+			"arguments": 2,
+			"delay": 5000
+		},
+		{
+			"id": 3,
+			"title": "<h1>The unrefined data - removing variables</h1>",
+			"text": "<p>The main task, however, remains to focus in on the variables that help us understand our data.</p>",
+			"animation": "showUnrefinedVariables",
+			"animationReverse": "none",
+			"delay": 2000
+			
+		},
+		{
+			"id": 4,
+			"title": "<h1>The unrefined data - removing variables</h1>",
+			"text": "<p>Each little circle to our left represents one variable - one piece of information about our respondents.</p><p>For example one variable is about <a href='#' class='narrative' id='highlightVarsAge'>the age of our respondents</a>, another is about <a href='#' class='narrative'id='highlightVarsContent'>how much they like to watch Sports</a>, a 3rd is about <a href='#' class='narrative' id='highlightVarsSubs'>which Brand they subscribe to.</a></p>",
+			"animation": "none",
+			"animationReverse": "none",
+			"delay": 0
+		},
+		{
+			"id": 5,
+			"title": "<h1>The unrefined data - removing variables</h1>",
+			"text": "<p>To start making our data more digestible, we also put each variable in one of <a href='#' class='narrative'id='highlightCategories'>6 question categories</a>.</p><p>Demographics, Content, Advertising would be 3 of them.</p><p>This makes things already a little easier to read and control. Also, different departments look differently at each category.</p><p>The marketing department will focus on brand perception...</p>",
+			"animation": "highlightCategories",
+			"animationReverse": "removeCategoryDescriptions",
+			"delay": 500
+		},
+		{
+			"id": 6,
+			"title": "<h1>The final refinement</h1>",
+			"text": "<p>...the content department on content liking and everyone will be interested in Demographics as everybody can relate to it.</p>",
+			"animation": "showCategoryDescriptions",
+			"animationReverse": "showCategoryDescriptions",
+			"delay": 5000
+		},
+		{
+			"id": 7,
+			"title": "<h1>The unrefined data - removing variables</h1>",
+			"text":"<p>However, alas, we still have too many variables to siff through.</p><p>Only some of these variables can help us profiling our potential customers. Most of them won't.</p><p>So we need to find a 'signal', we need to find the variables that characterise our potentials best.</p>",
+			"animation": "removeCategoryDescriptions",
+			"animationReverse": "none",
+			"delay": 0
+		},
+		{
+			"id": 8,
+			"title": "<h1>Refining the data - finding a signal</h1>",
+			"text": "<p>This is where statistical learning can help. We build a model and ask it to find all variables that have a strong relationship with being a potential customer. Basically the model learns to represent a potential customer through all the <strong>meaningful</strong> variables we throw at it.</p><p>By doing so, it gets rid of all uninteresting information - all the 'noise' - and returns only the variables that help seperate potentials from non-potentials like so...</p>",
+			"animation": "none",
+			"animationReverse": "showUnrefinedVariables",
+			"delay": 0
+		},
+		{
+			"id": 9,
+			"title": "<h1>Refining the data - finding a signal</h1>",
+			"text": "<p>The model just boiled down our 3,000 variables to a set of 87 variables it deems important when telling our potential customers from the non-potential cutsomers.</p><p>It can even tell us how important in characterising our potentials each of the surviving variables is compared to the others....</p>",
+			"animation": "getReducedDataset",
+			"animationReverse": "getReducedDataset",
+			"delay": 3000
+		},
+		{
+			"id": 10,
+			"title": "<h1>Refining our data further</h1>",
+			"text": "<p>That's kind. Not long ago we looked at 3,000 pieces of indistinguishable information and now we have a weighted ranking of what makes and breaks a potential customer.</p><p>However, we also want to know in what way and to what level each piece is related to a potential customer.</p>",
+			"animation": "getImportantDataset",
+			"animationReverse": "none",
+			"delay": 3000
+		},
+		{
+			"id": 11,
+			"title": "<h1>See how our groups differ</h1>",
+			"text": "<p>Checking the importance (that is the bubble-size) we can see that for example <a href='#' class='narrative' id='mouseoverAge'>Age</a> is an important characteristic. So is <a href='#' class='narrative' id='mouseoverRecom19'>Recommending Operator 19</a> as well as <a href='#' class='narrative' id='mouseoverSub19'>Subscribing to Operator 19</a></p><p>Let's look at their split...</p>",
+			"animation": "none",
+			"animationReverse": "removeBars",
+			"delay": 0
+		},
+		{
+			"id": 12,
+			"title": "<h1>See how our groups differ</h1>",
+			"text": "<p>And indeed, we can see some differences between potentials and non-potentials.</p><p>Potentials are in average younger than non-potentials.</p><p>Also striking that all of our potentials would recommend using Online Brand 19 and 56% of our potentials used to subscribe to the same Operator 19, whereas only 10% of the non-potentials did.</p>",
+			"animation": "growBars",
+			"animationReverse": "none",
+			"delay": 4500
+		},
+		{
+			"id": 13,
+			"title": "<h1>See how our groups differ</h1>",
+			"text": "<p>How can this help me?</p><p>It builds up a profile of my potential customer. What has operator 19 we have not ? What made them move away from operator 19 even though they all recommend it ? Good research gives answers while also raising good questions...</p> <p>But Back to our bubbles...</p>",
+			"animation": "none",
+			"animationReverse": "growBars",
+			"delay": 0
+		},
+
+		{
+			"id": 14,
+			"title": "<h1>The final refiement</h1>",
+			"text": "<p>Less than 90 variables in 6 categories allow us to quickly see the building blocks of a strategy around our potential customers.</p><p>Now ! In order to achieve the split into our <a href='#' class='narrative'id='highlightCategories'>question categories</a> we didn't run one single model - we ran 6 models. One for each variable category.</p><p>This was an important step in our analysis to allow different departements to focus on our potential customers from differing angles.</p",
+			"animation": "highlightCategories",
+			"animationReverse": "none",
+			"delay": 0
+		},
+
+		{
+			"id": 15,
+			"title": "<h1>The final refinement</h1>",
+			"text": "<p>However, we of course also want to know the winning variables, the prominent, the most important factors across all 3,000 variables distinguising our potentials best.</p>",
+			"animation": "none",
+			"animationReverse": "getImportantDataset",
+			"delay": 0
+		},
+		{
+			"id": 16,
+			"title": "<h1>The final refinement</h1>",
+			"text": "<p>In comes the final step showing what one single model would do, reducing our 3,000 variables to a subset of in this case 29 ranked important charactersistcs.</p><p>Blood.</p>",
+			"animation": "finalModel",
+			"animationReverse": "none",
+			"delay": 4000
+		}
+	]
+}
+
