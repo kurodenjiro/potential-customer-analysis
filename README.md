@@ -1,6 +1,7 @@
 ## Potential Customer Analysis
 
-Using a Gradient Boosting Machine on survey data to characterise potential customers
+###### Using a Gradient Boosting Machine on survey data to characterise potential customers
+
 ---
 
 1. [Objective] (#the-objective-seeing-our-potential-customers)
