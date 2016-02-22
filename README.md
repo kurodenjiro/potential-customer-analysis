@@ -1,12 +1,12 @@
 ## Potential Customer Analysis
 
-**Using a Gradient Boosting Machine on survey data to identify potential customers**
+Using a Gradient Boosting Machine on survey data to characterise potential customers
 ---
 
-[The Objective] (#the-objective-seeing-our-potential-customers)
-[The Data] (#the-data-many-0s-and-1s)
-[The Models] (#the-models-lasso-and-boosting)
-[The Visual] (#the-visual-explanation-animation-and-interactivity)
+1. [Objective] (#the-objective-seeing-our-potential-customers)
+2. [Data] (#the-data-many-0s-and-1s)
+3. [Models] (#the-models-lasso-and-boosting)
+4. [Visual] (#the-visual-explanation-animation-and-interactivity)
 
 ===
 
