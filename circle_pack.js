@@ -286,11 +286,6 @@ function tapper(data) {
 	
 	removeBars(); // in case there were some
 	
-	d3.select('section#container')
-		.append('i')
-		.classed('fa', true)
-		.classed('fa-arrow-down', true);
-	
 	var svgPlotpoints = d3.select('svg.plotpoints').selectAll('circle')
 		.data(plotpoints)
 		.enter();
@@ -372,16 +367,7 @@ function tapper(data) {
 
 	} // small function to change the plotpoint
 
-	function removeNarrative() {
-
-		removeBars();
-		d3.selectAll('div.narrative > div > *').transition().style('opacity', 0).remove();
-		d3.selectAll('svg.plotpoints > *').transition().style('opacity', 0).remove();
-		d3.selectAll('div#removeNarrative').transition().style('opacity', 0).style('display', 'none');
-	
-	} // small function to remove the story
-	
-	function showRemNarrBtn () {
+	function showRemNarrBtn() {
 
 		d3.selectAll('i.fa-arrow-down').transition().style('opacity', 0).remove();
 		d3.select('div#removeNarrative').style('display', 'inherit');
@@ -426,6 +412,15 @@ function tapper(data) {
 
 } // tapper function to tell the story sequentially
 
+function removeNarrative() {
+
+	removeBars();
+	d3.selectAll('div.narrative > div > *').transition().style('opacity', 0).remove();
+	d3.selectAll('svg.plotpoints > *').transition().style('opacity', 0).remove();
+	d3.selectAll('div#removeNarrative').transition().style('opacity', 0).style('display', 'none');
+
+} // small function to remove the story
+	
 
 // animation functions for narrative
 
@@ -449,8 +444,40 @@ storyAnims.none = function() {
 storyAnims.allCases = function() {
 	
 	d3.selectAll('svg#main > g *').remove(); // remove all elements in svg g
-	d3.select('div.tooltip').style('opacity', 0);
+	// d3.select('div.tooltip').style('opacity', 0);
 	nodes = []; // empty nodes
+
+	setTimeout(function(){
+
+		var loc = d3.select('div.plotpoints')[0][0].getBoundingClientRect();
+
+		d3.select('div.tooltip')
+			.html(function() { return 'Use your keyboard down- and up-arrows to navigate'; })
+			.style('opacity', 1)
+			.style('background-color', '#555')
+			.style('color', '#fff')
+			.style('top', (loc.top + loc.height - 30) + 'px')
+			.style('left', null)
+			.style('right', '3%');
+
+	}, 8000);
+
+
+	setTimeout(function() {
+
+		d3.select('div.tooltip')
+			.transition()
+			.style('opacity', 0)
+
+		d3.select('div.tooltip')
+			.transition()
+			.delay(400)		
+			.style('background-color', '#F2F1EF')
+			.style('color', '#6C7A89')
+			.style('right', null);
+
+
+	}, 12000)
 
 	function cases() {
 	
@@ -993,8 +1020,16 @@ var getNewData = function(dataFile) {
   });
 };
 
+
 // event listener, handler to pick dataset
 d3.selectAll('li.data').on('mousedown', function() {
+
+	// remove all narrative stuff and re-build the annotations only if the narrative is currently happening
+	if(d3.select('svg.plotpoints *')[0][0] !== null){
+		removeNarrative();
+		d3.selectAll('svg > g *').remove();
+		buildAnnotation();
+	}
 
 	var liId = d3.select(this).attr('id');
 	var data = dataLookup[liId];

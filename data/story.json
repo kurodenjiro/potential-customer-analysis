@@ -9,7 +9,7 @@
 		{
 			"id": 0,
 			"title": "<h1>The unrefined data - removing cases</h1>",
-			"text": "<p>At the beginning of time, we have a relatvely large (some might rightly say really small) dataset of around 3,000 variables for 25,000 respondents.</p><p>Each dot to the right represents about 10 people that kindly filled in a questionnaire.</p><p>Pursuing our mission to cut through to the important information it's easy to get rid of some of these 25,000 cases.</p><p>First, we only look at the last 6 months and remove all respondents from the first 6 months (we can run historic models later)...</p>",
+			"text": "<p>At the beginning of time, we have a relatvely large (some might rightly say really small) dataset of around 3,000 variables for 25,000 respondents.</p><p>Each dot to the left represents about 10 people that kindly filled in a questionnaire.</p><p>Pursuing our mission to cut through to the important information it's easy to get rid of some of these 25,000 cases.</p><p>First, we only look at the last 6 months and remove all respondents from the first 6 months (we can run historic models later)...</p>",
 			"animation": "allCases",
 			"animationReverse": "none",
 			"delay": 6000
