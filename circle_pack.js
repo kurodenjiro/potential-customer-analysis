@@ -3,16 +3,16 @@
 
 // utilities
 var log = console.log.bind(console);
-var spaceLess = function(x) { return x.replace(/[^A-Za-z0-9]/g,''); } // remove all non-letter characters
+var spaceLess = function(x) { return x.replace(/[^A-Za-z0-9]/g,''); }; // remove all non-letter characters
 /* Accepts one or more transitions and a callback as last argument, Example: 
     var transition1 = d3.selectAll('g').transition().duration(500)
       , transition2 = d3.selectAll('circle').transition().duration(400)
       , callback = function() {console.log('done')}
     onD3TransitionsEnd(transition1, transition2, callback) */
 function transitionEnd() {
-  var args = Array.prototype.slice.call(arguments)
-    , selectionCount = 0
-		, cb = args[args.length - 1];
+  var args = Array.prototype.slice.call(arguments);
+  var selectionCount = 0;
+	var cb = args[args.length - 1];
 
   for (var i = 0; i < args.length - 1; i++) {
     selectionCount += args[i].length;
@@ -36,7 +36,7 @@ var dur = 3000;
 var removeBars; // allow global access as we need it in narrative
 
 // set up constants and containers
-var diameter = window.innerHeight * .85,
+var diameter = window.innerHeight * 0.85,
     format = d3.format(',d'),
 		svgWidth = diameter,
 		svgHeight = diameter * 1.04;
@@ -57,7 +57,7 @@ var svg = d3.select('#container').append('svg')
 function buildAnnotation() {
 
 			var title = svg.append('g')
-					.attr('transform', 'translate(' + [(diameter*.95),15] + ')');
+					.attr('transform', 'translate(' + [(diameter * 0.95), 15] + ')');
 	
 			title.append('text')
 					.attr('id', 'title')
@@ -214,7 +214,7 @@ function modal(data) {
 					.transition().style('opacity', 0)
 					.each('end', function(){
 						
-						d3.select('li.explain').html('what\'s this?')
+						d3.select('li.explain').html('what\'s this?');
 
 						d3.select('div#modal > div *').remove();
 
@@ -266,7 +266,7 @@ function pointColour(el, dur, del, col) {
 	el.transition('pointColour')
 		.duration(dur)
 		.delay(del)
-		.style('fill', col)
+		.style('fill', col);
 }
 
 
@@ -327,7 +327,7 @@ function tapper(data) {
 				setStoryHtml(thisData.text, 0); // change html
 
 				if(thisData.arguments) {
-					var arg  = thisData.arguments;
+					var arg = thisData.arguments;
 					storyAnims[thisData.animationReverse](arg);
 				} // condition on if arguments are available
 				storyAnims[thisData.animationReverse](); // trigger animation
@@ -337,7 +337,7 @@ function tapper(data) {
 				setStoryHtml(thisData.text, thisData.delay); // change html
 
 				if(thisData.arguments) {
-					var arg  = thisData.arguments;
+					var arg = thisData.arguments;
 					storyAnims[thisData.animation](arg);
 				} // condition on if arguments are available
 				storyAnims[thisData.animation](); // trigger animation
@@ -357,7 +357,7 @@ function tapper(data) {
 		
 			}, 1000); // add listeners to a-tags (if available) after a delay to wait for HTML to build
 			
-			if(activePlotpoint === n - 1) { showRemNarrBtn(); }; // only show remove narrative button when at the final plotpoint
+			if(activePlotpoint === n - 1) { showRemNarrBtn(); } // only show remove narrative button when at the final plotpoint
 			
 			
 		} // only change plotpoint if it progresses or decreases by one. We need to check how thisData.id - activePlotpoint behaves (-1 when points clicked, 0 when arrows used) as well as how the direction variable behaves (triggered when arrows used: -1 for down, 1 for up)
@@ -399,7 +399,7 @@ function tapper(data) {
 
 			changePlotpoint(); // fire plotpoint event 
 
-			if(activePlotpoint === n - 1) { showRemNarrBtn(); }; // only show remove narrative button when at the final plotpoint
+			if(activePlotpoint === n - 1) { showRemNarrBtn(); } // only show remove narrative button when at the final plotpoint
 
 		} // arrow down
 		
@@ -443,7 +443,7 @@ storyAnims.none = function() {
 	
 	log('no animation for this plotpoint');
 	
-} // none
+}; // none
 
 
 storyAnims.allCases = function() {
@@ -461,8 +461,8 @@ storyAnims.allCases = function() {
 		    .nodes(nodes)
 		    .links([])
 		    .size([width, height])
-				.gravity(.5) // .1 attraction to focal point. 0 none - 1 quite a lot (can go > 1)
-				.friction(.5) // .9 values in range [0,1], velocity decay, the higher the more decay
+				.gravity(0.5) // .1 attraction to focal point. 0 none - 1 quite a lot (can go > 1)
+				.friction(0.5); // .9 values in range [0,1], velocity decay, the higher the more decay
 				// .charge(-30) // -30 negative value: node repulsion - positive value: node attraction
 				// .theta(.8) //.8 not to worry - affects large clusters
 				// .alpha(.9); // changing doesn't change much. 1 controls the cooling paramater deciding the time it takes the layout to settle
@@ -531,7 +531,7 @@ storyAnims.allCases = function() {
 				.style('r', 0)
 				.remove();
 		
-		} // update()
+		}; // update()
 
 		update(nodes);
 	
@@ -539,7 +539,7 @@ storyAnims.allCases = function() {
 	
 	cases();
 	
-} // allCases
+}; // allCases
 
 storyAnims.reduceCases = function(removeNo) {
 
@@ -567,7 +567,7 @@ storyAnims.reduceCases = function(removeNo) {
 
 	}, 7000); // invoke after rain
 
-} // reduceCases
+}; // reduceCases
 
 
 storyAnims.showUnrefinedVariables = function() {
@@ -620,7 +620,7 @@ storyAnims.showUnrefinedVariables = function() {
 		
 	}); // invoke the circel-pack after transition end in callback 
 	
-} // showUnrefinedVariables
+}; // showUnrefinedVariables
 
 
 storyAnims.highlightVars = {};
@@ -631,7 +631,7 @@ storyAnims.highlightVars.setHighlight = function(id, html) {
 	
 	var x = d3.select('.node#' + id + ' > circle').data()[0].x;
 	var y = d3.select('.node#' + id + ' > circle').data()[0].y;
-	var r = d3.select('.node#' + id + ' > circle').attr('r')
+	var r = d3.select('.node#' + id + ' > circle').attr('r');
 
 	d3.select('.node#' + id + ' > circle')
 		.transition()
@@ -647,7 +647,7 @@ storyAnims.highlightVars.setHighlight = function(id, html) {
 	d3.select('.tooltip')
 		.transition()
 		.delay(250)
-		.style('opacity', .9);
+		.style('opacity', 0.9);
 
 	setTimeout(function() {
 
@@ -663,9 +663,9 @@ storyAnims.highlightVars.setHighlight = function(id, html) {
 				animFlag = 0; 
 			});
 
-	}, dur * .66);
+	}, dur * 0.66);
 
-} // highlightVars.setHighlight
+}; // highlightVars.setHighlight
 
 storyAnims.highlightVarsAll = function() {
 
@@ -677,23 +677,23 @@ storyAnims.highlightVarsAll = function() {
 
 	}
 
-} // highlightVarsAll - not used !
+}; // highlightVarsAll - not used !
 
 storyAnims.highlightVarsAge = function() {
 
 	if(!animFlag) storyAnims.highlightVars.setHighlight('Age', 'Age');
 
-} // highlightVarsAge
+}; // highlightVarsAge
 
 storyAnims.highlightVarsContent = function() {
 
-	if(!animFlag) storyAnims.highlightVars.setHighlight('LikesSport', 'Really likes to watch Sports')
+	if(!animFlag) storyAnims.highlightVars.setHighlight('LikesSport', 'Really likes to watch Sports');
 
 }; // highlightVarsContent
 
 storyAnims.highlightVarsSubs = function() {
 
-	if(!animFlag) storyAnims.highlightVars.setHighlight('SUBOperator12', 'Subscribes to a certain operator')
+	if(!animFlag) storyAnims.highlightVars.setHighlight('SUBOperator12', 'Subscribes to a certain operator');
 
 }; // highlightVarsSubs
 
@@ -705,7 +705,7 @@ storyAnims.mouseoverAge = function() {
 	setTimeout(function() { eventFire(ageNode, 'mouseover'); }, 1);
 	setTimeout(function() { eventFire(ageNode, 'mouseout'); }, 750);
 
-} // mouseoverAge
+}; // mouseoverAge
 
 storyAnims.mouseoverSub19 = function() {
 
@@ -714,7 +714,7 @@ storyAnims.mouseoverSub19 = function() {
 	setTimeout(function() { eventFire(subNode, 'mouseover'); }, 1);
 	setTimeout(function() { eventFire(subNode, 'mouseout'); }, 750);
 
-} // mouseoverSub19
+}; // mouseoverSub19
 
 storyAnims.mouseoverRecom19 = function() {
 
@@ -723,7 +723,7 @@ storyAnims.mouseoverRecom19 = function() {
 	setTimeout(function() { eventFire(recomNode, 'mouseover'); }, 1);
 	setTimeout(function() { eventFire(recomNode, 'mouseout'); }, 750);
 
-} // mouseoverRecom19
+}; // mouseoverRecom19
 
 
 storyAnims.highlightCategories = function() {
@@ -769,7 +769,7 @@ storyAnims.highlightCategories = function() {
 	}); // highlight each bubble
 	
 	
-} // highlightCategories
+}; // highlightCategories
 
 storyAnims.showCategoryDescriptions = function() {
 	
@@ -843,16 +843,16 @@ storyAnims.showCategoryDescriptions = function() {
 	}); // loop through each categories element
 	
 	
-} // showCategoryDescriptions
+}; // showCategoryDescriptions
 
 storyAnims.removeCategoryDescriptions = function() {
 	
-d3.selectAll('div#categoryLabel')
-	.transition()
-	.style('opacity', 0)
-	.remove();
+	d3.selectAll('div#categoryLabel')
+		.transition()
+		.style('opacity', 0)
+		.remove();
 
-} // removeCategoryDescriptions
+}; // removeCategoryDescriptions
 
 
 storyAnims.getReducedDataset = function() {
@@ -868,7 +868,7 @@ storyAnims.getReducedDataset = function() {
 		
 	getNewData('data/data_germany_split_size.json'); 
 	
-} // getReducedDataset
+}; // getReducedDataset
 
 storyAnims.getImportantDataset = function() {
 	
@@ -879,7 +879,7 @@ storyAnims.getImportantDataset = function() {
 	getNewData('data/data_germany_split.json'); 
 	
 	
-} // getImportantDataset
+}; // getImportantDataset
 
 
 storyAnims.moveNarrative = function(direction) {
@@ -891,7 +891,7 @@ storyAnims.moveNarrative = function(direction) {
 		.style('height', '50%')
 		.style('top', direction === 'down' ? '45%' : '15%');
 	
-} // moveNarrative
+}; // moveNarrative
 
 storyAnims.growBars = function() {
 	
@@ -917,19 +917,19 @@ storyAnims.growBars = function() {
 	setTimeout(function() { eventFire(subpastNode, 'mousedown'); }, timeout + 500);
 	setTimeout(function() { eventFire(subpastNode, 'mouseout'); }, timeout + 750);
 	
-	storyAnims.moveNarrative('down')
+	storyAnims.moveNarrative('down');
 	
-} // growBars
+}; // growBars
 
 storyAnims.removeBars = function() {
 	
 	if(!d3.select('svg.svgRight').empty()) {
-		storyAnims.moveNarrative('up')
+		storyAnims.moveNarrative('up');
 	}
 	
 	removeBars();
 
-} // removeBars
+}; // removeBars
 
 
 storyAnims.finalModel = function() {
@@ -941,7 +941,7 @@ storyAnims.finalModel = function() {
 	getNewData('data/data_germany_all.json');
 
 	
-} // finalModel
+}; // finalModel
 
 
 
@@ -991,7 +991,7 @@ var getNewData = function(dataFile) {
 		refresh();
 
   });
-}
+};
 
 // event listener, handler to pick dataset
 d3.selectAll('li.data').on('mousedown', function() {
@@ -1013,7 +1013,7 @@ var refresh = function() {
 		// event-listener for overall data, needs to be inside refresh()
 		d3.selectAll('li.all').on('mousedown', function(){
 			d3.select('#title').html('unrefined data');
-			getNewData1()
+			getNewData1();
 		});
 
 		// manually created color scale - works with multi-nested (sub-models) and single-nested models (no sub-models)
@@ -1032,7 +1032,7 @@ var refresh = function() {
 		// enter g
 		var enter = node.enter().insert('g')
 				.attr('class', function(d) { return d.children ? 'node' : 'leaf node'; })
-				.attr('id', function(d) { return spaceLess(d.name) })
+				.attr('id', function(d) { return spaceLess(d.name); })
         .attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
 		
 		// set delay for staggered object constancy only for transition from constant to importance dataset (too slow for the other direction)
@@ -1108,7 +1108,7 @@ var refresh = function() {
 		// tooltip and circle size on hover
 		node.on('mouseover', function(d){
 									
-			tip.style('opacity', .9);
+			tip.style('opacity', 0.9);
 			tip.html(!d.children ? d.name + '</br>' + 'importance: ' + d3.round(d.size, 1) : d.name)
 				.style('left', (d3.event.pageX) + 'px')
 				.style('top', (d3.event.pageY - 28) + 'px');
@@ -1137,13 +1137,13 @@ var refresh = function() {
 					.transition()
 					.duration(dur/10)
 					.attr('r', function(d) { return d.r; })
-					.style('opacity', 1);;
+					.style('opacity', 1);
 			}
 		});
 
 
 		var formatPercentPrep = d3.format('%');
-		var formatPercent = function(x) { return formatPercentPrep(x); }
+		var formatPercent = function(x) { return formatPercentPrep(x); };
 
 		// bars
 		if(dataSet === 2){
@@ -1288,13 +1288,13 @@ var refresh = function() {
 				.transition()
 				.style('opacity', 0);
 
-		}
+		};
 		
 		d3.select('.svgRightWrapper').on('dblclick', removeBars);
 		d3.select('#removeBars').on('mousedown', removeBars);
 
 			
-} // refresh()
+}; // refresh()
 
 
 
