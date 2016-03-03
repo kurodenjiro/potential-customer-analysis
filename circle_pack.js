@@ -447,37 +447,52 @@ storyAnims.allCases = function() {
 	// d3.select('div.tooltip').style('opacity', 0);
 	nodes = []; // empty nodes
 
+
+
+	
+		
 	setTimeout(function(){
 
-		var loc = d3.select('div.plotpoints')[0][0].getBoundingClientRect();
+		// show the note on up- down-navigation only if the narrative is currently happening
+		if(d3.select('svg.plotpoints *')[0][0] !== null) {
 
-		d3.select('div.tooltip')
-			.html(function() { return 'Use your keyboard down- and up-arrows to navigate'; })
-			.style('opacity', 1)
-			.style('background-color', '#555')
-			.style('color', '#fff')
-			.style('top', (loc.top + loc.height - 30) + 'px')
-			.style('left', null)
-			.style('right', '3%');
+			var loc = d3.select('div.plotpoints')[0][0].getBoundingClientRect();
+
+			d3.select('div.tooltip')
+				.html(function() { return 'Use your keyboard down- and up-arrows to navigate'; })
+				.style('opacity', 1)
+				.style('background-color', '#555')
+				.style('color', '#fff')
+				.style('top', (loc.top + loc.height - 30) + 'px')
+				.style('left', null)
+				.style('right', '3%');
+
+		}
 
 	}, 8000);
 
 
 	setTimeout(function() {
 
-		d3.select('div.tooltip')
-			.transition()
-			.style('opacity', 0)
+		// show the note on up- down-navigation only if the narrative is currently happening
+		if(d3.select('svg.plotpoints *')[0][0] !== null) {
+	
+			d3.select('div.tooltip')
+				.transition()
+				.style('opacity', 0)
 
-		d3.select('div.tooltip')
-			.transition()
-			.delay(400)		
-			.style('background-color', '#F2F1EF')
-			.style('color', '#6C7A89')
-			.style('right', null);
+			d3.select('div.tooltip')
+				.transition()
+				.delay(400)		
+				.style('background-color', '#F2F1EF')
+				.style('color', '#6C7A89')
+				.style('right', null);
 
+		}
 
 	}, 12000)
+
+
 
 	function cases() {
 	
@@ -1029,6 +1044,7 @@ d3.selectAll('li.data').on('mousedown', function() {
 		removeNarrative();
 		d3.selectAll('svg > g *').remove();
 		buildAnnotation();
+		d3.select('div.tooltip').style('opacity', 0);
 	}
 
 	var liId = d3.select(this).attr('id');
