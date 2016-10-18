@@ -142,7 +142,7 @@
 		{
 			"id": 16,
 			"title": "<h1>The final refinement</h1>",
-			"text": "<p>In comes the final step showing what one single model would do, reducing our 3,000 variables to a subset of in this case 29 ranked important charactersistcs.</p><p>Blood.</p>",
+			"text": "<p>In comes the final step showing what one single model would do, reducing our 3,000 variables to a subset of in this case 29 ranked important charactersistcs.</p>",
 			"animation": "finalModel",
 			"animationReverse": "none",
 			"delay": 4000
